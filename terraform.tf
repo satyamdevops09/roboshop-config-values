@@ -5,7 +5,7 @@ provider "vault" {
 
 terraform {
   backend "s3" {
-    bucket = "terraform-b85"
+    bucket = "terraform-s09"
     key    = "roboshop-config-values/terraform.tfstate"
     region = "us-east-1"
   }
