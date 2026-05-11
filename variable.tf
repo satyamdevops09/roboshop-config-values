@@ -8,7 +8,7 @@ variable "secret-mounts" {
     roboshop-infra={
       description="roboshop Project infra Secrets"
 
-         }
+    }
   }
 }
 
