@@ -30,5 +30,15 @@ variable "secrets" {
 
       }
     }
+    catalogue={
+      secret_mount= "roboshop-dev"
+      kv={
+        MONGO ="true" ,
+        MONGO_URL= "mongodb://mongodb-dev.sdevops09.online:27017/catalogue",
+
+
+
+      }
+    }
   }
 }
