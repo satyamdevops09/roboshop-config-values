@@ -36,7 +36,14 @@ variable "secrets" {
         MONGO ="true" ,
         MONGO_URL= "mongodb://mongodb-dev.sdevops09.online:27017/catalogue",
 
-
+      }
+    }
+    catalogue={
+      secret_mount= "roboshop-dev"
+      kv={
+        MONGO ="true",
+        REDIS_URL ="redis://redies-dev.sdevops09.online:6379" ,
+        MONGO_URL= "mongodb://mongodb-dev.sdevops09.online:27017/users",
 
       }
     }
