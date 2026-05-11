@@ -89,7 +89,7 @@ variable "secrets" {
       secret_mount= "roboshop-infra"
       kv={
         username ="ec2-user",
-        password ="DevOps32",
+        password ="DevOps321",
 
       }
     }
