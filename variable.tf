@@ -65,6 +65,8 @@ variable "secrets" {
       kv={
         CART_ENDPOINT ="cart-dev.sdevops09.online:8080",
         DB_HOST ="mysql-dev.sdevops09.online",
+        DB_USER ="root",
+        DB_PASS ="RoboShop@1",
       }
     }
 
