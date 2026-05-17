@@ -30,6 +30,16 @@ variable "secrets" {
         CART_URL = "http://cart-dev.sdevops09.online:8080/",
         SHIPPING_URL = "http://shipping-dev.sdevops09.online:8080/",
         PAYMENT_URL = "http://payment-dev.sdevops09.online:8080/",
+        CATALOGUE_HOST = "catalogue-dev.sdevops09.online",
+        CATALOGUE_PORT = "8080"
+        USER_HOST      = "user-dev.sdevops09.online"
+        USER_PORT      = "8080"
+        CART_HOST      = "cart-dev.sdevops09.online"
+        CART_PORT      = "8080"
+        SHIPPING_HOST  = "shipping-dev.sdevops09.online"
+        SHIPPING_PORT  = "8080"
+        PAYMENT_HOST   = "payment-dev.sdevops09.online"
+        PAYMENT_PORT   = "8080"
 
 
       }
