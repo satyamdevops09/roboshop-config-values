@@ -47,7 +47,7 @@ variable "secrets" {
     catalogue={
       secret_mount= "roboshop-dev"
       kv={
-        MONGO ="true" ,
+        MONGO ="true"
         MONGO_URL= "mongodb://mongodb-dev.sdevops09.online:27017/catalogue"
         DB_TYPE     = "mongo"
         APP_GIT_URL = "https://github.com/roboshop-devops-project-v3/catalogue"
