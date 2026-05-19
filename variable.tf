@@ -19,7 +19,7 @@ variable "secrets" {
       kv={
         REDIS_HOST = "redis-dev.sdevops09.online",
         CATALOGUE_HOST = "catalogue-dev.sdevops09.online",
-        CATALOGUE_PORT=8080
+        CATALOGUE_PORT="8080"
       }
     }
     frontend={
