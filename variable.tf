@@ -97,7 +97,7 @@ variable "secrets" {
         USER_HOST ="user-dev.sdevops09.online",
         USER_PORT =8080,
         AMQP_HOST ="rabbitmq-dev.sdevops09.online",
-        AMQP_PORT ="roboshop",
+        AMQP_USER ="roboshop",
         AMQP_PASS ="roboshop123",
       }
     }
