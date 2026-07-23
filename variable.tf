@@ -17,28 +17,28 @@ variable "secrets" {
     cart={
       secret_mount= "roboshop-dev"
       kv={
-        REDIS_HOST = "redis-dev.sdevops09.online",
-        CATALOGUE_HOST = "catalogue-dev.sdevops09.online",
+        REDIS_HOST = "redis-dev.sdevops09.shop",
+        CATALOGUE_HOST = "catalogue-dev.sdevops09.shop",
         CATALOGUE_PORT="8080"
       }
     }
     frontend={
       secret_mount= "roboshop-dev"
       kv={
-        CATALOGUE_URL = "http://catalogue-dev.sdevops09.online:8080/"
-        USER_URL = "http://user-dev.sdevops09.online:8080/"
-        CART_URL = "http://cart-dev.sdevops09.online:8080/"
-        SHIPPING_URL = "http://shipping-dev.sdevops09.online:8080/"
-        PAYMENT_URL = "http://payment-dev.sdevops09.online:8080/"
-        CATALOGUE_HOST = "catalogue-dev.sdevops09.online"
+        CATALOGUE_URL = "http://catalogue-dev.sdevops09.shop:8080/"
+        USER_URL = "http://user-dev.sdevops09.shop:8080/"
+        CART_URL = "http://cart-dev.sdevops09.shop:8080/"
+        SHIPPING_URL = "http://shipping-dev.sdevops09.shop:8080/"
+        PAYMENT_URL = "http://payment-dev.sdevops09.shop:8080/"
+        CATALOGUE_HOST = "catalogue-dev.sdevops09.shop"
         CATALOGUE_PORT = "8080"
-        USER_HOST      = "user-dev.sdevops09.online"
+        USER_HOST      = "user-dev.sdevops09.shop"
         USER_PORT      = "8080"
-        CART_HOST      = "cart-dev.sdevops09.online"
+        CART_HOST      = "cart-dev.sdevops09.shop"
         CART_PORT      = "8080"
-        SHIPPING_HOST  = "shipping-dev.sdevops09.online"
+        SHIPPING_HOST  = "shipping-dev.sdevops09.shop"
         SHIPPING_PORT  = "8080"
-        PAYMENT_HOST   = "payment-dev.sdevops09.online"
+        PAYMENT_HOST   = "payment-dev.sdevops09.shop"
         PAYMENT_PORT   = "8080"
 
 
@@ -48,10 +48,10 @@ variable "secrets" {
       secret_mount= "roboshop-dev"
       kv={
         MONGO ="true"
-        MONGO_URL= "mongodb://mongodb-dev.sdevops09.online:27017/catalogue"
+        MONGO_URL= "mongodb://mongodb-dev.sdevops09.shop:27017/catalogue"
         DB_TYPE     = "mongo"
         APP_GIT_URL = "https://github.com/roboshop-devops-project-v3/catalogue"
-        DB_HOST     = "mongodb-dev.sdevops09.online"
+        DB_HOST     = "mongodb-dev.sdevops09.shop"
         SCHEMA_FILE = "db/master-data.js"
 
       }
@@ -60,8 +60,8 @@ variable "secrets" {
       secret_mount= "roboshop-dev"
       kv={
         MONGO ="true",
-        REDIS_URL ="redis://redies-dev.sdevops09.online:6379" ,
-        MONGO_URL= "mongodb://mongodb-dev.sdevops09.online:27017/users",
+        REDIS_URL ="redis://redies-dev.sdevops09.shop:6379" ,
+        MONGO_URL= "mongodb://mongodb-dev.sdevops09.shop:27017/users",
 
       }
     }
@@ -81,8 +81,8 @@ variable "secrets" {
     shipping={
       secret_mount= "roboshop-dev"
       kv={
-        CART_ENDPOINT ="cart-dev.sdevops09.online:8080"
-        DB_HOST ="mysql-dev.sdevops09.online"
+        CART_ENDPOINT ="cart-dev.sdevops09.shop:8080"
+        DB_HOST ="mysql-dev.sdevops09.shop"
         DB_USER ="root"
         DB_PASS ="RoboShop@1"
         DB_TYPE       = "mysql"
@@ -92,11 +92,11 @@ variable "secrets" {
     payment={
       secret_mount= "roboshop-dev"
       kv={
-        CART_HOST ="cart-dev.sdevops09.online"
+        CART_HOST ="cart-dev.sdevops09.shop"
         CART_PORT ="8080"
-        USER_HOST ="user-dev.sdevops09.online"
+        USER_HOST ="user-dev.sdevops09.shop"
         USER_PORT ="8080"
-        AMQP_HOST ="rabbitmq-dev.sdevops09.online"
+        AMQP_HOST ="rabbitmq-dev.sdevops09.shop"
         AMQP_USER ="roboshop"
         AMQP_PASS ="roboshop123"
       }
